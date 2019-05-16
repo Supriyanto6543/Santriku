@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Santriku</string>
+    <string name="see_all">Lihat Semua</string>
+    <string name="santri_not_found">Belum ada data</string>
+    <string name="santri">Santri</string>
+    <string name="plp">PLP</string>
+    <string name="record">Absensi</string>
+    <string name="portfolio">Portfolio</string>
+    <string name="not_connected">Tidak Terhubung</string>
+    <string name="retry">Ulangi</string>
+    <string name="server_error">Server Error</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="ustad">Ustadz</string>
+    <string name="about">About</string>
+    <string name="foto">Foto</string>
+</resources>

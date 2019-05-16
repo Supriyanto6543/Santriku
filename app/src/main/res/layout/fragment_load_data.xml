@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nested_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <LinearLayout
+           android:id="@+id/frame_layout_root"
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <RelativeLayout
+               android:layout_margin="5dp"
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <android.support.v7.widget.RecyclerView
+                   android:id="@+id/rpl"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"/>
+
+           </RelativeLayout>
+
+           <LinearLayout
+               android:id="@+id/record_title"
+               android:layout_margin="5dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+               <com.makeramen.roundedimageview.RoundedImageView
+                   android:layout_width="4dp"
+                   android:layout_height="match_parent"
+                   app:riv_corner_radius="2dp"
+                   android:scaleType="centerCrop"
+                   android:src="@color/colorSeeAll" />
+
+               <TextView
+                   android:text="@string/record"
+                   android:textColor="@color/colorTitle"
+                   android:layout_width="0dp"
+                   android:textSize="17dp"
+                   android:padding="8dp"
+                   android:layout_weight="10"
+                   android:layout_height="wrap_content" />
+
+               <TextView
+                   android:id="@+id/record_view_all"
+                   android:text="@string/see_all"
+                   android:textColor="@color/colorSeeAll"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+
+
+           </LinearLayout>
+
+           <RelativeLayout
+               android:layout_margin="5dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <android.support.v7.widget.RecyclerView
+                   android:id="@+id/rv_record"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"/>
+
+               <TextView
+                   android:id="@+id/tv_record"
+                   android:layout_centerInParent="true"
+                   android:gravity="center"
+                   android:text="@string/santri_not_found"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content" />
+
+           </RelativeLayout>
+
+           <LinearLayout
+               android:id="@+id/plp_title"
+               android:layout_margin="5dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+               <com.makeramen.roundedimageview.RoundedImageView
+                   android:layout_width="4dp"
+                   android:layout_height="match_parent"
+                   app:riv_corner_radius="2dp"
+                   android:scaleType="centerCrop"
+                   android:src="@color/colorPrimary" />
+
+               <TextView
+                   android:text="@string/plp"
+                   android:textColor="@color/colorTitle"
+                   android:layout_width="0dp"
+                   android:textSize="17dp"
+                   android:padding="8dp"
+                   android:layout_weight="10"
+                   android:layout_height="wrap_content" />
+
+               <TextView
+                   android:id="@+id/plp_view_all"
+                   android:text="@string/see_all"
+                   android:textColor="@color/colorSeeAll"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+
+
+           </LinearLayout>
+
+           <RelativeLayout
+               android:layout_margin="5dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <android.support.v7.widget.RecyclerView
+                   android:id="@+id/rv_plp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"/>
+
+               <TextView
+                   android:id="@+id/tv_plp"
+                   android:layout_centerInParent="true"
+                   android:gravity="center"
+                   android:text="@string/santri_not_found"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content" />
+
+           </RelativeLayout>
+
+           <LinearLayout
+               android:id="@+id/santri_title"
+               android:layout_margin="5dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+               <com.makeramen.roundedimageview.RoundedImageView
+                   android:layout_width="4dp"
+                   android:layout_height="match_parent"
+                   app:riv_corner_radius="2dp"
+                   android:scaleType="centerCrop"
+                   android:src="@color/colorAccent" />
+
+               <TextView
+                   android:text="@string/santri"
+                   android:textColor="@color/colorTitle"
+                   android:layout_width="0dp"
+                   android:textSize="17dp"
+                   android:padding="8dp"
+                   android:layout_weight="10"
+                   android:layout_height="wrap_content" />
+
+               <TextView
+                   android:id="@+id/santri_view_all"
+                   android:text="@string/see_all"
+                   android:textColor="@color/colorSeeAll"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+
+
+           </LinearLayout>
+
+           <RelativeLayout
+               android:layout_margin="5dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <android.support.v7.widget.RecyclerView
+                   android:id="@+id/rv_santri"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"/>
+
+               <TextView
+                   android:id="@+id/tv_santri"
+                   android:layout_centerInParent="true"
+                   android:gravity="center"
+                   android:text="@string/santri_not_found"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content" />
+
+           </RelativeLayout>
+
+           <LinearLayout
+               android:id="@+id/portfolio_title"
+               android:visibility="gone"
+               android:layout_margin="5dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+               <com.makeramen.roundedimageview.RoundedImageView
+                   android:layout_width="4dp"
+                   android:layout_height="match_parent"
+                   app:riv_corner_radius="2dp"
+                   android:scaleType="centerCrop"
+                   android:src="@color/colorRounded" />
+
+               <TextView
+                   android:text="@string/portfolio"
+                   android:textColor="@color/colorTitle"
+                   android:layout_width="0dp"
+                   android:textSize="17dp"
+                   android:padding="8dp"
+                   android:layout_weight="10"
+                   android:layout_height="wrap_content" />
+
+               <TextView
+                   android:id="@+id/portfolio_view_all"
+                   android:text="@string/see_all"
+                   android:textColor="@color/colorSeeAll"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+
+
+           </LinearLayout>
+
+           <RelativeLayout
+               android:visibility="gone"
+               android:layout_margin="5dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <android.support.v7.widget.RecyclerView
+                   android:id="@+id/rv_portfolio"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"/>
+
+               <TextView
+                   android:id="@+id/tv_portfolio"
+                   android:layout_centerInParent="true"
+                   android:gravity="center"
+                   android:text="@string/santri_not_found"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content" />
+
+           </RelativeLayout>
+
+       </LinearLayout>
+
+       <fr.castorflex.android.circularprogressbar.CircularProgressBar
+           android:visibility="gone"
+           android:id="@+id/progress_bar"
+           android:layout_centerInParent="true"
+           android:indeterminate="true"
+           app:cpb_sweep_speed="1.0"
+           app:cpb_color="@color/colorTitle"
+           app:cpb_max_sweep_angle="310"
+           app:cpb_min_sweep_angle="10"
+           app:cpb_rotation_speed="1.0"
+           android:layout_width="50dp"
+           android:layout_height="50dp" />
+
+       <FrameLayout
+           android:id="@+id/f1_empty"
+           android:layout_centerInParent="true"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"/>
+
+   </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>
